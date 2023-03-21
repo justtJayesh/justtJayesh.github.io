@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import { Box, Heading } from '@chakra-ui/react';
 import './App.css';
+import { HeroSection } from './Components/HeroSection';
+import Navbar from './Components/Navbar';
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio will be up soon..</h1>
+      <Navbar />
+      <HeroSection />
     </div>
   );
 }
