@@ -52,7 +52,7 @@ export default function Navbar() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={"center"}>
-                        {/* <Box>Logo</Box> */}
+                        <Box>Logo</Box>
                         <HStack
                             as={"nav"}
                             spacing={4}
@@ -61,20 +61,29 @@ export default function Navbar() {
                             {/* {Links.map((link) => (
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
-                            <NavLink className="nav-link home">Home</NavLink>
-                            <NavLink className="nav-link about">
-                                About Me
-                            </NavLink>
-                            <NavLink className="nav-link skills">
+
+                            <div className="nav-link home">
+                                <NavLink key={"home"}>Home</NavLink>
+                            </div>
+                            <div className="nav-link about">
+                                <NavLink key={"about"}>About Me</NavLink>
+                            </div>
+                            <NavLink key={"skills"} className="nav-link skills">
                                 Skills
                             </NavLink>
-                            <NavLink className="nav-link projects">
+                            <NavLink
+                                key={"project"}
+                                className="nav-link projects"
+                            >
                                 Projects
                             </NavLink>
-                            <NavLink className="nav-link contact">
+                            <NavLink
+                                key={"contact"}
+                                className="nav-link contact"
+                            >
                                 Contact
                             </NavLink>
-                            <NavLink className="nav-link resume">
+                            <NavLink key={"resume"} className="nav-link resume">
                                 Resume
                             </NavLink>
                         </HStack>
