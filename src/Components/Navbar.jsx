@@ -62,25 +62,17 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <div className="nav-link home">
-                                <NavLink key={"home"}>Home</NavLink>
-                            </div>
-                            <div className="nav-link about">
-                                <NavLink key={"about"}>About Me</NavLink>
-                            </div>
+                            <div class="nav-link home"><NavLink key={"home"}>Home</NavLink></div>
+                            <NavLink key={"about"} class="nav-link about">
+                                About Me
+                            </NavLink>
                             <NavLink key={"skills"} className="nav-link skills">
                                 Skills
                             </NavLink>
-                            <NavLink
-                                key={"project"}
-                                className="nav-link projects"
-                            >
+                            <NavLink key={"project"} className="nav-link projects">
                                 Projects
                             </NavLink>
-                            <NavLink
-                                key={"contact"}
-                                className="nav-link contact"
-                            >
+                            <NavLink key={"contact"} className="nav-link contact">
                                 Contact
                             </NavLink>
                             <NavLink key={"resume"} className="nav-link resume">
