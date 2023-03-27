@@ -1,17 +1,15 @@
-import { Box, Heading } from '@chakra-ui/react';
-import './App.css';
-import { HeroSection } from './Components/HeroSection';
-import Navbar from './Components/Navbar';
-
-
+import "./App.css";
+import { HeroSection } from "./Components/HeroSection";
+import Navbar from "./Components/Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <HeroSection />
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <HeroSection />
+            {/* <MySkills /> */}
+        </div>
+    );
 }
 
 export default App;
