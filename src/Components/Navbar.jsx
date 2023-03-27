@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import {
     Box,
     Flex,
@@ -62,17 +61,25 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <div class="nav-link home"><NavLink key={"home"}>Home</NavLink></div>
-                            <NavLink key={"about"} class="nav-link about">
+                            <NavLink key={"home"} className="nav-link home">
+                                Home
+                            </NavLink>
+                            <NavLink key={"about"} className="nav-link about">
                                 About Me
                             </NavLink>
                             <NavLink key={"skills"} className="nav-link skills">
                                 Skills
                             </NavLink>
-                            <NavLink key={"project"} className="nav-link projects">
+                            <NavLink
+                                key={"project"}
+                                className="nav-link projects"
+                            >
                                 Projects
                             </NavLink>
-                            <NavLink key={"contact"} className="nav-link contact">
+                            <NavLink
+                                key={"contact"}
+                                className="nav-link contact"
+                            >
                                 Contact
                             </NavLink>
                             <NavLink key={"resume"} className="nav-link resume">
@@ -92,20 +99,28 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <NavLink className="nav-link home">Home</NavLink>
-                            <NavLink className="nav-link about">
+                            <NavLink key={"home"} className="nav-link home">
+                                Home
+                            </NavLink>
+                            <NavLink key={"about"} className="nav-link about">
                                 About Me
                             </NavLink>
-                            <NavLink className="nav-link skills">
+                            <NavLink key={"skills"} className="nav-link skills">
                                 Skills
                             </NavLink>
-                            <NavLink className="nav-link projects">
+                            <NavLink
+                                key={"project"}
+                                className="nav-link projects"
+                            >
                                 Projects
                             </NavLink>
-                            <NavLink className="nav-link contact">
+                            <NavLink
+                                key={"contact"}
+                                className="nav-link contact"
+                            >
                                 Contact
                             </NavLink>
-                            <NavLink className="nav-link resume">
+                            <NavLink key={"resume"} className="nav-link resume">
                                 Resume
                             </NavLink>
                         </Stack>
