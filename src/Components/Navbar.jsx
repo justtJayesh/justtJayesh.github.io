@@ -37,7 +37,7 @@ export default function Navbar() {
 
     return (
         <div id="nav-menu">
-            <Box bg={useColorModeValue("whiteAlpha.100", "gray.900")} px={9}>
+            <Box bg={useColorModeValue("whiteAlpha.100", "gray.900")} px={9} >
                 <Flex
                     h={16}
                     alignItems={"center"}

@@ -9,7 +9,7 @@ export const About = () => {
                     as={"header"}
                     fontSize={{lg:"7xl", base: "6xl"}}
                     fontWeight={"black"}
-                    textAlign={{lg:"right", base: 'center'}}
+                    textAlign={{lg:"left", base: 'center'}}
                 >
                     ABOUT
                 </Heading>
