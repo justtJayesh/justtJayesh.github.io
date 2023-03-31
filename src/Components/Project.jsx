@@ -15,20 +15,15 @@ import project1 from "../Assets/project_posters/1.png";
 import project2 from "../Assets/project_posters/2.png";
 import project3 from "../Assets/project_posters/3.png";
 
-// const projectData = [
-//     {
-//         id:1,
-
-//     }
-// ]
-
 const Project = () => {
     return (
         <div>
             <Box w={"72%"} margin={"auto"}>
-                <Heading textAlign={{ base: "center", lg: "left" }}>
-                    Projects
-                </Heading>
+                <Box padding={'0 20px'} borderLeft={'3px solid gray'}>
+                    <Heading textAlign={{ base: "center", lg: "left" }}>
+                        My Work
+                    </Heading>
+                </Box>
                 {/* Project 1 */}
                 <Stack display={"flex"} alignItems={"center"}>
                     <Box
@@ -100,6 +95,7 @@ const Project = () => {
                                         <Link
                                             href="https://github.com/justtJayesh/JEFIT-Clone"
                                             _hover={{ textDecoration: "none" }}
+                                            target="_blank"
                                         >
                                             <Button
                                                 size="sm"
@@ -114,10 +110,11 @@ const Project = () => {
                                         <Link
                                             href="https://equiinox.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
+                                            target="_blank"
                                         >
                                             <Button
                                                 size="sm"
-                                                colorScheme={"red"}
+                                                colorScheme={"orange"}
                                             >
                                                 <HStack>
                                                     <Text>Deployment</Text>
@@ -208,6 +205,7 @@ const Project = () => {
                                         <Link
                                             href="https://github.com/justtJayesh/LensKart-Clone"
                                             _hover={{ textDecoration: "none" }}
+                                            target="_blank"
                                         >
                                             <Button
                                                 size="sm"
@@ -222,10 +220,11 @@ const Project = () => {
                                         <Link
                                             href="https://lenscraft.vercel.app/"
                                             _hover={{ textDecoration: "none" }}
+                                            target="_blank"
                                         >
                                             <Button
                                                 size="sm"
-                                                colorScheme={"red"}
+                                                colorScheme={"orange"}
                                             >
                                                 <HStack>
                                                     <Text>Deployment</Text>
@@ -316,6 +315,7 @@ const Project = () => {
                                         <Link
                                             href="https://github.com/justtJayesh/JEFIT-Clone"
                                             _hover={{ textDecoration: "none" }}
+                                            target="_blank"
                                         >
                                             <Button
                                                 size="sm"
@@ -330,10 +330,11 @@ const Project = () => {
                                         <Link
                                             href="https://equiinox.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
+                                            target="_blank"
                                         >
                                             <Button
                                                 size="sm"
-                                                colorScheme={"red"}
+                                                colorScheme={"orange"}
                                             >
                                                 <HStack>
                                                     <Text>Deployment</Text>
@@ -347,8 +348,6 @@ const Project = () => {
                         </Stack>
                     </Box>
                 </Stack>
-
-               
             </Box>
         </div>
     );

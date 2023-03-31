@@ -82,8 +82,11 @@ export default function Skills() {
                         >
                             SKILLS
                         </Heading> */}
-                        <Heading textAlign={{ base: "center", lg: "left" }}>Skills</Heading>
-                        <Box></Box>
+                        <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
+                            <Heading textAlign={{ base: "center", lg: "left" }}>
+                                Skills
+                            </Heading>
+                        </Box>
                         <Text color={"gray.500"} fontSize={"lg"}>
                             Lorem ipsum dolor sit amet, consetetur sadipscing
                             elitr, sed diam nonumy eirmod tempor invidunt ut
