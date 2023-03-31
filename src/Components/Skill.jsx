@@ -74,14 +74,15 @@ export default function Skills() {
                     >
                         Skills
                     </Text> */}
-                        <Heading
+                        {/* <Heading
                             as={"header"}
                             fontSize={{ lg: "7xl", base: "6xl" }}
                             fontWeight={"black"}
                             textAlign={{ base: "center", lg: "left" }}
                         >
                             SKILLS
-                        </Heading>
+                        </Heading> */}
+                        <Heading textAlign={{ base: "center", lg: "left" }}>Skills</Heading>
                         <Box></Box>
                         <Text color={"gray.500"} fontSize={"lg"}>
                             Lorem ipsum dolor sit amet, consetetur sadipscing
