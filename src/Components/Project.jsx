@@ -18,11 +18,9 @@ import project3 from "../Assets/project_posters/3.png";
 const Project = () => {
     return (
         <div>
-            <Box w={"72%"} margin={"auto"}>
-                <Box padding={'0 20px'} borderLeft={'3px solid gray'}>
-                    <Heading textAlign={{ base: "center", lg: "left" }}>
-                        My Work
-                    </Heading>
+            <Box w={{ lg: "72%", base: "90%" }} margin={"auto"}>
+                <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
+                    <Heading>My Work</Heading>
                 </Box>
                 {/* Project 1 */}
                 <Stack display={"flex"} alignItems={"center"}>

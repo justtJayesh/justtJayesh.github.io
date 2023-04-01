@@ -6,7 +6,7 @@ export const About = () => {
         <Box backgroundColor={"#EDF7FA"} display="flex">
             <Box w={"72%"} margin={"70px auto"}>
                 <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
-                    <Heading textAlign={{ lg: "left", base: "center" }}>
+                    <Heading>
                         About
                     </Heading>
                 </Box>
