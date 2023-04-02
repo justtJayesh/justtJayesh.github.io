@@ -55,7 +55,9 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading>JEE-Fit Clone</Heading>
+                                    <Heading fontSize={"2xl"}>
+                                        JEE-Fit Clone
+                                    </Heading>
                                     <Badge>Individual Project</Badge>
                                     <Box>
                                         <HStack
@@ -160,7 +162,7 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading>LensKart Clone</Heading>
+                                    <Heading fontSize={"2xl"}>LensKart Clone</Heading>
                                     <Badge>Individual Project</Badge>
                                     <Box>
                                         <HStack
@@ -242,7 +244,7 @@ const Project = () => {
                     <Box
                         w={{ lg: "100%" }}
                         padding={"30px 0"}
-                        borderBottom={"1px solid gray"}
+                        // borderBottom={"1px solid gray"}
                     >
                         <Stack
                             display={"flex"}
@@ -270,7 +272,7 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading>American Eagle Clone</Heading>
+                                    <Heading fontSize={"2xl"}>American Eagle Clone</Heading>
                                     <Badge>Collaborative Project</Badge>
                                     <Box>
                                         <HStack
@@ -326,7 +328,7 @@ const Project = () => {
                                             </Button>
                                         </Link>
                                         <Link
-                                            href="https://equiinox.netlify.app/"
+                                            href="https://american-snake.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
                                         >
