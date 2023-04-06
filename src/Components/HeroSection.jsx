@@ -1,9 +1,12 @@
 import { Button } from "@chakra-ui/button";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
-import { Box, Heading, HStack, Stack, Text } from "@chakra-ui/layout";
+import { Box, Heading, HStack, Stack, Text, Link } from "@chakra-ui/layout";
 import React from "react";
 import heroImg from "../Assets/heroImage.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
 export const HeroSection = () => {
     return (
@@ -16,7 +19,6 @@ export const HeroSection = () => {
                 flexDirection={"column"}
                 // border='1px solid black';
             >
-                {/* <Heading fontWeight={'black'} fontSize={'9xl'} padding={'30px 0'} width={'fit-content'}>Hero Section</Heading> */}
                 <HStack
                     justifyContent={"space-evenly"}
                     align={"center"}
@@ -42,10 +44,36 @@ export const HeroSection = () => {
                             <Text
                                 w={{ lg: "85%", md: "95%", base: "100%" }}
                                 id="user-detail-intro"
+                                color={"gray.500"}
                             >
                                 I code web apps just to let out my creative
                                 thoughts & whatever helps make my life easier.
                             </Text>
+                            <Box>
+                                <HStack spacing={4}>
+                                    <FontAwesomeIcon icon={faLocationArrow} />
+                                    <Text fontWeight={"light"}>
+                                        Nagpur Maharashtra, INDIA
+                                    </Text>
+                                    <Box
+                                        h="18px"
+                                        borderRight={"2px solid black"}
+                                        m={0}
+                                    ></Box>
+                                    <Link
+                                        href="https://www.linkedin.com/in/jayeshmate/"
+                                        target="_blank"
+                                    >
+                                        <IoLogoLinkedin />
+                                    </Link>
+                                    <Link
+                                        href="https://github.com/justtJayesh"
+                                        target="_blank"
+                                    >
+                                        <IoLogoGithub />
+                                    </Link>
+                                </HStack>
+                            </Box>
                             <Button
                                 bg={useColorModeValue("#EE6262", "gray.700")}
                                 color="white"

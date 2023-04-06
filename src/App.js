@@ -6,6 +6,7 @@ import { HeroSection } from "./Components/HeroSection";
 import Navbar from "./Components/Navbar";
 import Project from "./Components/Project";
 import Skills from "./Components/Skill";
+import Contact from "./Components/Contact";
 
 function App() {
     return (
@@ -16,15 +17,7 @@ function App() {
             <Skills />
             <Project />
             <GithubStats />
-
-            <Box>
-                <HStack>
-                    <Box>a</Box>
-                    <Box>b</Box>
-                    <Box>c</Box>
-                    <Box>d</Box>
-                </HStack>
-            </Box>
+            <Contact />
         </div>
     );
 }

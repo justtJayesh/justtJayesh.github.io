@@ -9,10 +9,11 @@ import {
     useColorModeValue,
     Stack,
     useColorMode,
+    Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-
+import favicon from '../Assets/dh.png'
 // const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
 const NavLink = ({ children }) => (
@@ -51,7 +52,9 @@ export default function Navbar() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={"center"}>
-                        <Box>Logo</Box>
+                        <Box w={'40px'} h={'40px'}>
+                            <Image src={favicon} />
+                        </Box>
                         <HStack
                             as={"nav"}
                             spacing={4}

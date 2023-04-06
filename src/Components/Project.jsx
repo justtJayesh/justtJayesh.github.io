@@ -18,11 +18,12 @@ import project3 from "../Assets/project_posters/3.png";
 const Project = () => {
     return (
         <div>
-            <Box w={{ lg: "72%", base: "90%" }} margin={"auto"}>
+            <Box w={{ lg: "72%", base: "90%" }} margin={"40px auto"}>
                 <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
                     <Heading>My Work</Heading>
                 </Box>
-                {/* Project 1 */}
+
+                {/* Project 3 */}
                 <Stack display={"flex"} alignItems={"center"}>
                     <Box
                         w={{ lg: "100%" }}
@@ -42,7 +43,7 @@ const Project = () => {
                                 marginTop={"0.5rem"}
                             >
                                 <Image
-                                    src={project1}
+                                    src={project3}
                                     w={"100%"}
                                     borderRadius={5}
                                 />
@@ -55,10 +56,8 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading fontSize={"2xl"}>
-                                        JEE-Fit Clone
-                                    </Heading>
-                                    <Badge>Individual Project</Badge>
+                                    <Heading fontSize={"2xl"}>American Eagle Clone</Heading>
+                                    <Badge>Collaborative Project</Badge>
                                     <Box>
                                         <HStack
                                             justifyContent={{
@@ -66,6 +65,12 @@ const Project = () => {
                                                 lg: "left",
                                             }}
                                         >
+                                            <Badge colorScheme="blue">
+                                                React js
+                                            </Badge>
+                                            <Badge colorScheme="purple">
+                                                Redux
+                                            </Badge>
                                             <Badge colorScheme="orange">
                                                 HTML
                                             </Badge>
@@ -78,12 +83,11 @@ const Project = () => {
                                         </HStack>
                                     </Box>
                                     <Text textAlign={"justify"}>
-                                        JEE-Fit is a Fitness tracking web
-                                        application use to track any individuals
-                                        fitness health. Customize your workout
-                                        plan with over 1400 free exercises in
-                                        Jefit Workout Plan Builder. And easily
-                                        share with friends.
+                                        American Eagle Outfitters, Inc., also
+                                        known as American Eagle, is an American
+                                        lifestyle, clothing, and accessories
+                                        retailer headquartered at SouthSide
+                                        Works in Pittsburgh, Pennsylvania.
                                     </Text>
                                     <HStack
                                         spacing={5}
@@ -108,7 +112,7 @@ const Project = () => {
                                             </Button>
                                         </Link>
                                         <Link
-                                            href="https://equiinox.netlify.app/"
+                                            href="https://american-snake.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
                                         >
@@ -239,7 +243,7 @@ const Project = () => {
                     </Box>
                 </Stack>
 
-                {/* Project 3 */}
+                {/* Project 1 */}
                 <Stack display={"flex"} alignItems={"center"}>
                     <Box
                         w={{ lg: "100%" }}
@@ -259,7 +263,7 @@ const Project = () => {
                                 marginTop={"0.5rem"}
                             >
                                 <Image
-                                    src={project3}
+                                    src={project1}
                                     w={"100%"}
                                     borderRadius={5}
                                 />
@@ -272,8 +276,10 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading fontSize={"2xl"}>American Eagle Clone</Heading>
-                                    <Badge>Collaborative Project</Badge>
+                                    <Heading fontSize={"2xl"}>
+                                        JEE-Fit Clone
+                                    </Heading>
+                                    <Badge>Individual Project</Badge>
                                     <Box>
                                         <HStack
                                             justifyContent={{
@@ -281,12 +287,6 @@ const Project = () => {
                                                 lg: "left",
                                             }}
                                         >
-                                            <Badge colorScheme="blue">
-                                                React js
-                                            </Badge>
-                                            <Badge colorScheme="purple">
-                                                Redux
-                                            </Badge>
                                             <Badge colorScheme="orange">
                                                 HTML
                                             </Badge>
@@ -299,11 +299,12 @@ const Project = () => {
                                         </HStack>
                                     </Box>
                                     <Text textAlign={"justify"}>
-                                        American Eagle Outfitters, Inc., also
-                                        known as American Eagle, is an American
-                                        lifestyle, clothing, and accessories
-                                        retailer headquartered at SouthSide
-                                        Works in Pittsburgh, Pennsylvania.
+                                        JEE-Fit is a Fitness tracking web
+                                        application use to track any individuals
+                                        fitness health. Customize your workout
+                                        plan with over 1400 free exercises in
+                                        Jefit Workout Plan Builder. And easily
+                                        share with friends.
                                     </Text>
                                     <HStack
                                         spacing={5}
@@ -328,7 +329,7 @@ const Project = () => {
                                             </Button>
                                         </Link>
                                         <Link
-                                            href="https://american-snake.netlify.app/"
+                                            href="https://equiinox.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
                                         >

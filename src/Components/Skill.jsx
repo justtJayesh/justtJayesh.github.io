@@ -49,7 +49,7 @@ const Feature = ({ text, icon, iconBg }) => {
 export default function Skills() {
     return (
         <div>
-            <Container maxW={"5xl"} py={12}>
+            <Container maxW={"5xl"} py={12} w={{ lg: "72%", base: "90%" }} margin={"40px auto"}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Flex>
                         <Image
@@ -86,9 +86,8 @@ export default function Skills() {
                             <Heading>Skills</Heading>
                         </Box>
                         <Text color={"gray.500"} fontSize={"lg"}>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore
+                            The more good ideas you collect, the more you can
+                            choose from to be influenced by.
                         </Text>
                         <Box></Box>
                         <Box></Box>
