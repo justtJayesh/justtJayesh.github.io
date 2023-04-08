@@ -67,6 +67,7 @@ export default function Navbar() {
                             <NavLink key={"home"} className="nav-link home">
                                 Home
                             </NavLink>
+                            
                             <NavLink key={"about"} className="nav-link about">
                                 About Me
                             </NavLink>

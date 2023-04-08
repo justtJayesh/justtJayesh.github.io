@@ -1,4 +1,4 @@
-import { Box, HStack, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import profilePicture from "../Assets/picture2.jpg";
 
