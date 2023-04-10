@@ -13,24 +13,25 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import favicon from '../Assets/dh.png'
+import favicon from "../Assets/dh.png";
+import { NavLink } from "react-router-dom";
 // const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
-const NavLink = ({ children }) => (
-    <Link
-        px={2}
-        py={1}
-        rounded={"md"}
-        fontSize={"large"}
-        _hover={{
-            textDecoration: "none",
-            bg: useColorModeValue("gray.100", "gray.700"),
-        }}
-        href={"#"}
-    >
-        <span>{children}</span>
-    </Link>
-);
+// const NavLink = ({ children }) => (
+//     <Link
+//         px={2}
+//         py={1}
+//         rounded={"md"}
+//         fontSize={"large"}
+//         _hover={{
+//             textDecoration: "none",
+//             bg: useColorModeValue("gray.100", "gray.700"),
+//         }}
+//         href={"#"}
+//     >
+//         <span>{children}</span>
+//     </Link>
+// );
 
 export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -38,7 +39,7 @@ export default function Navbar() {
 
     return (
         <div id="nav-menu">
-            <Box bg={useColorModeValue("whiteAlpha.100", "gray.900")} px={9} >
+            <Box bg={useColorModeValue("whiteAlpha.100", "gray.900")} px={9}>
                 <Flex
                     h={16}
                     alignItems={"center"}
@@ -52,7 +53,7 @@ export default function Navbar() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={"center"}>
-                        <Box w={'40px'} h={'40px'}>
+                        <Box w={"40px"} h={"40px"}>
                             <Image src={favicon} />
                         </Box>
                         <HStack
@@ -64,10 +65,25 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <NavLink key={"home"} className="nav-link home">
+                            <NavLink
+                                key={"home"}
+                                className="nav-link home"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={"#"}
+                            >
                                 Home
                             </NavLink>
-                            
+
                             <NavLink key={"about"} className="nav-link about">
                                 About Me
                             </NavLink>
