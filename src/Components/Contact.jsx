@@ -64,7 +64,7 @@ const Contact = () => {
                         fontWeight={"light"}
                         textAlign={"center"}
                     >
-                        Copyright ©2020 All rights reserved{" "}
+                        Copyright ©2023 All rights reserved{" "}
                     </Text>
                 </VStack>
             </Box>
