@@ -1,4 +1,4 @@
-import { Box, HStack } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import "./App.css";
 import { About } from "./Components/About";
 import GithubStats from "./Components/GithubStats";
@@ -18,6 +18,14 @@ function App() {
             <Project />
             <GithubStats />
             <Contact />
+            <Text
+                fontSize={"sm"}
+                fontWeight={"light"}
+                textAlign={"center"}
+                m={"20px auto"}
+            >
+                Copyright ©2023 All rights reserved{" "}
+            </Text>
         </div>
     );
 }

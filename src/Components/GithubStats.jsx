@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Heading, Image } from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Stack } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 
@@ -18,9 +18,9 @@ const GithubStats = () => {
                     </Box>
                 </Center>
             </Box>
-            <Center>
+            <Box w={{lg:'100%', base:"80%"}} m={'auto'}>
                 <div>
-                    <HStack>
+                    <Stack direction={{lg: 'row', md:"column", base:'column'}} spacing={4} justifyContent={'center'}>
                         <Image
                             id="github-streak-stats"
                             w={"420px"}
@@ -35,9 +35,9 @@ const GithubStats = () => {
                             id="github-top-langs"
                             src="https://github-readme-stats.vercel.app/api/top-langs/?username=justtJayesh&layout=compact"
                         />
-                    </HStack>
+                    </Stack>
                 </div>
-            </Center>
+            </Box>
         </div>
     );
 };

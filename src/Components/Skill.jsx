@@ -30,7 +30,7 @@ import {
 } from "react-icons/si";
 const Feature = ({ text, icon, iconBg }) => {
     return (
-        <Stack direction={"row"} align={"center"}>
+        <Stack direction={"row"} align={"center"} className="skills-card">
             <Flex
                 w={8}
                 h={8}
@@ -38,10 +38,11 @@ const Feature = ({ text, icon, iconBg }) => {
                 justify={"center"}
                 rounded={"full"}
                 bg={iconBg}
+                className="skills-card-img"
             >
                 {icon}
             </Flex>
-            <Text class="skills-card-name" fontWeight={600}>
+            <Text className="skills-card-name" fontWeight={600}>
                 {text}
             </Text>
         </Stack>
@@ -70,26 +71,6 @@ export default function Skills() {
                         />
                     </Flex>
                     <Stack spacing={4}>
-                        {/* <Text
-                        textTransform={"uppercase"}
-                        color={"blue.400"}
-                        fontWeight={600}
-                        fontSize={"sm"}
-                        bg={useColorModeValue("blue.50", "blue.900")}
-                        p={2}
-                        alignSelf={"flex-start"}
-                        rounded={"md"}
-                    >
-                        Skills
-                    </Text> */}
-                        {/* <Heading
-                            as={"header"}
-                            fontSize={{ lg: "7xl", base: "6xl" }}
-                            fontWeight={"black"}
-                            textAlign={{ base: "center", lg: "left" }}
-                        >
-                            SKILLS
-                        </Heading> */}
                         <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
                             <Heading>Skills</Heading>
                         </Box>

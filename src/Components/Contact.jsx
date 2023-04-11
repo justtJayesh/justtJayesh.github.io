@@ -26,13 +26,13 @@ const Contact = () => {
             >
                 <Box
                     padding={"0 20px"}
-                    mb={"20px"}
+                    mb={"30px"}
                     borderLeft={"3px solid gray"}
                 >
                     <Heading>Contact Me</Heading>
                 </Box>
                 <VStack spacing={10}>
-                    <Stack direction={'column'} spacing={5}>
+                    <Stack direction={"column"} spacing={8}>
                         <HStack spacing={"35px"} justifyContent={"center"}>
                             <Link
                                 id="contact-linkedin"
@@ -50,26 +50,23 @@ const Contact = () => {
                                 <IoLogoTwitter size={"40px"} />
                             </Link>
                         </HStack>
-                        <Stack direction={"row"} spacing={"8"}>
+                        <Stack
+                            direction={{ lg: "row", base: "column" }}
+                            spacing={{ lg: "8", base: "2" }}
+                        >
                             <HStack>
                                 <FontAwesomeIcon icon={faPhone} />
-                                <Text id="contact-phone">:  +917776044640</Text>
+                                <Text id="contact-phone">: +917776044640</Text>
                             </HStack>
                             <HStack>
                                 <FontAwesomeIcon icon={faEnvelope} />
                                 <Text id="contact-email">
-                                    :  Jayesh23mate@gmail.com
+                                    : Jayesh23mate@gmail.com
                                 </Text>
                             </HStack>
                         </Stack>
                     </Stack>
-                    <Text
-                        fontSize={"sm"}
-                        fontWeight={"light"}
-                        textAlign={"center"}
-                    >
-                        Copyright ©2023 All rights reserved{" "}
-                    </Text>
+                    
                 </VStack>
             </Box>
         </div>

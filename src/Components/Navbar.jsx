@@ -9,29 +9,30 @@ import {
     Stack,
     useColorMode,
     Image,
+    Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import favicon from "../Assets/dh.png";
-import { NavLink } from "react-router-dom";
+// import favicon from "../Assets/dh.png";
+// import { NavLink } from "react-router-dom";
 import React from "react";
 // const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
-// const NavLink = ({ children }) => (
-//     <Link
-//         px={2}
-//         py={1}
-//         rounded={"md"}
-//         fontSize={"large"}
-//         _hover={{
-//             textDecoration: "none",
-//             bg: useColorModeValue("gray.100", "gray.700"),
-//         }}
-//         href={"#"}
-//     >
-//         <span>{children}</span>
-//     </Link>
-// );
+const NavLink = ({ children }) => (
+    <Link
+        px={2}
+        py={1}
+        rounded={"md"}
+        fontSize={"large"}
+        _hover={{
+            textDecoration: "none",
+            bg: useColorModeValue("gray.100", "gray.700"),
+        }}
+        href={"#"}
+    >
+        <span>{children}</span>
+    </Link>
+);
 
 export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -57,7 +58,7 @@ export default function Navbar() {
                     />
                     <HStack spacing={8} alignItems={"center"}>
                         <Box w={"40px"} h={"40px"}>
-                            <Image src={favicon} />
+                            <Image src={""} />
                         </Box>
                         <HStack
                             as={"nav"}
@@ -71,18 +72,6 @@ export default function Navbar() {
                             <NavLink
                                 key={"home"}
                                 className="nav-link home"
-                                px={2}
-                                py={1}
-                                rounded={"md"}
-                                fontSize={"large"}
-                                _hover={{
-                                    textDecoration: "none",
-                                    bg: useColorModeValue(
-                                        "gray.100",
-                                        "gray.700"
-                                    ),
-                                }}
-                                href={"#"}
                                 onClick={click ? handleClick : null}
                             >
                                 Home
