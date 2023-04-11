@@ -14,7 +14,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
     return (
-        <div>
+        <div id="contact">
             <Box
                 w={{ lg: "72%", base: "90%" }}
                 // h={"192px"}
@@ -31,33 +31,37 @@ const Contact = () => {
                 >
                     <Heading>Contact Me</Heading>
                 </Box>
-                <VStack spacing={5}>
-                    <HStack spacing={"35px"} justifyContent={"center"}>
-                        <Link
-                            id="contact-linkedin"
-                            href="https://www.linkedin.com/in/jayeshmate/"
-                        >
-                            <IoLogoLinkedin size={"40px"} />
-                        </Link>
-                        <Link
-                            id="contact-github"
-                            href="https://github.com/justtJayesh"
-                        >
-                            <IoLogoGithub size={"40px"} />
-                        </Link>
-                        <Link href="https://twitter.com/justtJayesh">
-                            <IoLogoTwitter size={"40px"} />
-                        </Link>
-                    </HStack>
-                    <Stack direction={'row'} spacing={'8'}>
-                        <HStack>
-                            <FontAwesomeIcon icon={faPhone} />
-                            <Text id="contact-phone">: +917776044640</Text>
+                <VStack spacing={10}>
+                    <Stack direction={'column'} spacing={5}>
+                        <HStack spacing={"35px"} justifyContent={"center"}>
+                            <Link
+                                id="contact-linkedin"
+                                href="https://www.linkedin.com/in/jayeshmate/"
+                            >
+                                <IoLogoLinkedin size={"40px"} />
+                            </Link>
+                            <Link
+                                id="contact-github"
+                                href="https://github.com/justtJayesh"
+                            >
+                                <IoLogoGithub size={"40px"} />
+                            </Link>
+                            <Link href="https://twitter.com/justtJayesh">
+                                <IoLogoTwitter size={"40px"} />
+                            </Link>
                         </HStack>
-                        <HStack>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <Text id="contact-email">: Jayesh23mate@gmail.com</Text>
-                        </HStack>
+                        <Stack direction={"row"} spacing={"8"}>
+                            <HStack>
+                                <FontAwesomeIcon icon={faPhone} />
+                                <Text id="contact-phone">:  +917776044640</Text>
+                            </HStack>
+                            <HStack>
+                                <FontAwesomeIcon icon={faEnvelope} />
+                                <Text id="contact-email">
+                                    :  Jayesh23mate@gmail.com
+                                </Text>
+                            </HStack>
+                        </Stack>
                     </Stack>
                     <Text
                         fontSize={"sm"}

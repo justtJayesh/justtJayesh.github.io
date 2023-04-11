@@ -4,7 +4,7 @@ import profilePicture from "../Assets/picture2.jpg";
 
 export const About = () => {
     return (
-        <div id="user-detail-intro">
+        <div id="about" class="about section">
             <Box backgroundColor={"#EDF7FA"} display="flex">
                 <Box w={"72%"} margin={"70px auto"}>
                     <Stack
@@ -21,6 +21,7 @@ export const About = () => {
                             </Box>
                             <Box h={"7"}></Box>
                             <Text
+                                id="user-detail-intro"
                                 textAlign={"justify"}
                                 color={"gray.700"}
                                 fontSize={"lg"}

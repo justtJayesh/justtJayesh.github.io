@@ -17,7 +17,7 @@ import project3 from "../Assets/project_posters/3.png";
 
 const Project = () => {
     return (
-        <div>
+        <div id="projects">
             <Box w={{ lg: "72%", base: "90%" }} margin={"60px auto"}>
                 <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
                     <Heading>My Work</Heading>
@@ -272,6 +272,125 @@ const Project = () => {
                 </Stack>
 
                 {/* Project 1 */}
+                <Stack
+                    display={"flex"}
+                    alignItems={"center"}
+                    className="project-card"
+                >
+                    <Box
+                        w={{ lg: "100%" }}
+                        padding={"30px 0"}
+                        // borderBottom={"1px solid gray"}
+                    >
+                        <Stack
+                            display={"flex"}
+                            flexDirection={{ lg: "row", base: "column" }}
+                            justifyContent={"space-evenly"}
+                            alignItems={"top"}
+                        >
+                            <Box
+                                w={{ lg: "26%", base: "60%" }}
+                                borderRadius={"5px"}
+                                margin={{ base: "auto" }}
+                                marginTop={"0.5rem"}
+                            >
+                                <Image
+                                    src={project1}
+                                    w={"100%"}
+                                    borderRadius={5}
+                                />
+                            </Box>
+                            <Box
+                                w={{ lg: "67%", base: "100%" }}
+                                padding={"5px"}
+                            >
+                                <Stack
+                                    spacing={3}
+                                    textAlign={{ base: "center", lg: "left" }}
+                                >
+                                    <Heading
+                                        fontSize={"2xl"}
+                                        className="project-title"
+                                    >
+                                        JEE-Fit Clone
+                                    </Heading>
+                                    <Badge>Individual Project</Badge>
+                                    <Box className="project-tech-stack">
+                                        <HStack
+                                            justifyContent={{
+                                                base: "center",
+                                                lg: "left",
+                                            }}
+                                        >
+                                            <Badge colorScheme="orange">
+                                                HTML
+                                            </Badge>
+                                            <Badge colorScheme="blue">
+                                                CSS
+                                            </Badge>
+                                            <Badge colorScheme="yellow">
+                                                JavaScript
+                                            </Badge>
+                                        </HStack>
+                                    </Box>
+                                    <Text
+                                        textAlign={"justify"}
+                                        className="project-description"
+                                    >
+                                        JEE-Fit is a Fitness tracking web
+                                        application use to track any individuals
+                                        fitness health. Customize your workout
+                                        plan with over 1400 free exercises in
+                                        Jefit Workout Plan Builder. And easily
+                                        share with friends.
+                                    </Text>
+                                    <HStack
+                                        spacing={5}
+                                        justifyContent={{
+                                            base: "center",
+                                            lg: "left",
+                                        }}
+                                    >
+                                        <Link
+                                            className="project-github-link"
+                                            href="https://github.com/justtJayesh/JEFIT-Clone"
+                                            _hover={{ textDecoration: "none" }}
+                                            target="_blank"
+                                        >
+                                            <Button
+                                                size="sm"
+                                                colorScheme={"blue"}
+                                            >
+                                                <HStack>
+                                                    <Text>GitHub</Text>
+                                                    <IoLogoGithub />
+                                                </HStack>
+                                            </Button>
+                                        </Link>
+                                        <Link
+                                            className="project-deployed-link"
+                                            href="https://equiinox.netlify.app/"
+                                            _hover={{ textDecoration: "none" }}
+                                            target="_blank"
+                                        >
+                                            <Button
+                                                size="sm"
+                                                colorScheme={"orange"}
+                                            >
+                                                <HStack>
+                                                    <Text>Deployment</Text>
+                                                    <IoLinkSharp />
+                                                </HStack>
+                                            </Button>
+                                        </Link>
+                                    </HStack>
+                                </Stack>
+                            </Box>
+                        </Stack>
+                    </Box>
+                </Stack>
+
+                {/* demo */}
                 <Stack
                     display={"flex"}
                     alignItems={"center"}

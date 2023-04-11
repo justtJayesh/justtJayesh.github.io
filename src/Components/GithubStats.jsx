@@ -23,7 +23,7 @@ const GithubStats = () => {
                     <HStack>
                         <Image
                             id="github-streak-stats"
-                            w={"430px"}
+                            w={"420px"}
                             src="https://github-readme-streak-stats.herokuapp.com?user=justtJayesh"
                         />
                         <Image

@@ -50,7 +50,7 @@ const Feature = ({ text, icon, iconBg }) => {
 
 export default function Skills() {
     return (
-        <div class="skills-card">
+        <div id="skills">
             <Container
                 maxW={"5xl"}
                 py={12}
