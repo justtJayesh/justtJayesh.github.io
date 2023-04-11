@@ -6,13 +6,25 @@ export const About = () => {
     return (
         <Box backgroundColor={"#EDF7FA"} display="flex">
             <Box w={"72%"} margin={"70px auto"}>
-                <Stack direction={{lg:'row', md:'column', base: 'column'}} justifyContent={"space-between"}>
-                    <Box w={{lg:"60%", base:'100%'}}>
-                        <Box padding={"0 20px"} color={"gray.900"} borderLeft={"3px solid gray"}>
+                <Stack
+                    direction={{ lg: "row", md: "column", base: "column" }}
+                    justifyContent={"space-between"}
+                >
+                    <Box w={{ lg: "60%", base: "100%" }}>
+                        <Box
+                            padding={"0 20px"}
+                            color={"gray.900"}
+                            borderLeft={"3px solid gray"}
+                        >
                             <Heading>About</Heading>
                         </Box>
                         <Box h={"7"}></Box>
-                        <Text textAlign={"justify"} color={"gray.700"} fontSize={"lg"}>
+                        <Text
+                            textAlign={"justify"}
+                            color={"gray.700"}
+                            fontSize={"lg"}
+                            id="user-detail-intro"
+                        >
                             I'm a Full Stack Web Developer who is passionate
                             about developing things aesthetically pleasing and
                             creative to elevate people's interaction with the
@@ -25,11 +37,11 @@ export const About = () => {
                         </Text>
                     </Box>
                     <Box
-                        w={{lg:"25%", base: '70%'}}
+                        w={{ lg: "25%", base: "70%" }}
                         // borderRadius={"70%"}
                         // border={"1px solid black"}
                     >
-                        <Image src={profilePicture} borderRadius={"2%"} />
+                        <Image className="home-img" src={profilePicture} borderRadius={"2%"} />
                     </Box>
                 </Stack>
             </Box>

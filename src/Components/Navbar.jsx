@@ -15,6 +15,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import favicon from "../Assets/dh.png";
 import { NavLink } from "react-router-dom";
+import React from "react";
 // const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
 // const NavLink = ({ children }) => (
@@ -36,6 +37,9 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onOpen, onClose } = useDisclosure();
+
+    const [click, setClick] = React.useState(false);
+    const handleClick = () => setClick(!click);
 
     return (
         <div id="nav-menu">
@@ -80,6 +84,7 @@ export default function Navbar() {
                                     ),
                                 }}
                                 href={"#"}
+                                onClick={click ? handleClick : null}
                             >
                                 Home
                             </NavLink>

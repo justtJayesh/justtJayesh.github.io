@@ -41,18 +41,26 @@ const Feature = ({ text, icon, iconBg }) => {
             >
                 {icon}
             </Flex>
-            <Text fontWeight={600}>{text}</Text>
+            <Text class="skills-card-name" fontWeight={600}>
+                {text}
+            </Text>
         </Stack>
     );
 };
 
 export default function Skills() {
     return (
-        <div>
-            <Container maxW={"5xl"} py={12} w={{ lg: "72%", base: "90%" }} margin={"40px auto"}>
+        <div class="skills-card">
+            <Container
+                maxW={"5xl"}
+                py={12}
+                w={{ lg: "72%", base: "90%" }}
+                margin={"60px auto"}
+            >
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Flex>
                         <Image
+                            class="skills-card-img"
                             rounded={"md"}
                             alt={"feature image"}
                             src={

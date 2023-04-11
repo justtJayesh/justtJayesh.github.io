@@ -9,6 +9,10 @@ import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
 export const HeroSection = () => {
+    const handleResume = () =>{
+        window.open("https://drive.google.com/file/d/1T788dHvoZIeotEcH_pP-8SnKER1HmARW/view?usp=share_link");
+    }
+
     return (
         <div id="home">
             <Box
@@ -75,6 +79,7 @@ export const HeroSection = () => {
                                 </HStack>
                             </Box>
                             <Button
+                                id="resume-button-2"
                                 bg={useColorModeValue("#EE6262", "gray.700")}
                                 color="white"
                                 w={{ lg: "50%", base: "100%" }}
@@ -82,6 +87,7 @@ export const HeroSection = () => {
                                 h="50px"
                                 fontSize={"larger"}
                                 _hover={{ bg: "#f07f7f" }}
+                                onClick={handleResume}
                             >
                                 Download Resume
                             </Button>

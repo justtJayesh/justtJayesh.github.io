@@ -18,13 +18,17 @@ import project3 from "../Assets/project_posters/3.png";
 const Project = () => {
     return (
         <div>
-            <Box w={{ lg: "72%", base: "90%" }} margin={"40px auto"}>
+            <Box w={{ lg: "72%", base: "90%" }} margin={"60px auto"}>
                 <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
                     <Heading>My Work</Heading>
                 </Box>
 
                 {/* Project 3 */}
-                <Stack display={"flex"} alignItems={"center"}>
+                <Stack
+                    display={"flex"}
+                    alignItems={"center"}
+                    className="project-card"
+                >
                     <Box
                         w={{ lg: "100%" }}
                         padding={"30px 0"}
@@ -56,9 +60,14 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading fontSize={"2xl"}>American Eagle Clone</Heading>
+                                    <Heading
+                                        fontSize={"2xl"}
+                                        className="project-title"
+                                    >
+                                        American Eagle Clone
+                                    </Heading>
                                     <Badge>Collaborative Project</Badge>
-                                    <Box>
+                                    <Box className="project-tech-stack">
                                         <HStack
                                             justifyContent={{
                                                 base: "center",
@@ -82,7 +91,10 @@ const Project = () => {
                                             </Badge>
                                         </HStack>
                                     </Box>
-                                    <Text textAlign={"justify"}>
+                                    <Text
+                                        textAlign={"justify"}
+                                        className="project-description"
+                                    >
                                         American Eagle Outfitters, Inc., also
                                         known as American Eagle, is an American
                                         lifestyle, clothing, and accessories
@@ -97,6 +109,7 @@ const Project = () => {
                                         }}
                                     >
                                         <Link
+                                            className="project-github-link"
                                             href="https://github.com/justtJayesh/JEFIT-Clone"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
@@ -112,6 +125,7 @@ const Project = () => {
                                             </Button>
                                         </Link>
                                         <Link
+                                            className="project-deployed-link"
                                             href="https://american-snake.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
@@ -134,7 +148,11 @@ const Project = () => {
                 </Stack>
 
                 {/* Project 2 */}
-                <Stack display={"flex"} alignItems={"center"}>
+                <Stack
+                    display={"flex"}
+                    alignItems={"center"}
+                    className="project-card"
+                >
                     <Box
                         w={{ lg: "100%" }}
                         padding={"30px 0"}
@@ -166,9 +184,14 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading fontSize={"2xl"}>LensKart Clone</Heading>
+                                    <Heading
+                                        fontSize={"2xl"}
+                                        className="project-title"
+                                    >
+                                        LensKart Clone
+                                    </Heading>
                                     <Badge>Individual Project</Badge>
-                                    <Box>
+                                    <Box className="project-tech-stack">
                                         <HStack
                                             justifyContent={{
                                                 base: "center",
@@ -192,7 +215,10 @@ const Project = () => {
                                             </Badge>
                                         </HStack>
                                     </Box>
-                                    <Text textAlign={"justify"}>
+                                    <Text
+                                        textAlign={"justify"}
+                                        className="project-description"
+                                    >
                                         Lenskart is the leading e-commerce
                                         portal for eyewear in India. It has
                                         revolutionised the eyewear industry in
@@ -207,6 +233,7 @@ const Project = () => {
                                         }}
                                     >
                                         <Link
+                                            className="project-github-link"
                                             href="https://github.com/justtJayesh/LensKart-Clone"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
@@ -222,6 +249,7 @@ const Project = () => {
                                             </Button>
                                         </Link>
                                         <Link
+                                            className="project-deployed-link"
                                             href="https://lenscraft.vercel.app/"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
@@ -244,7 +272,11 @@ const Project = () => {
                 </Stack>
 
                 {/* Project 1 */}
-                <Stack display={"flex"} alignItems={"center"}>
+                <Stack
+                    display={"flex"}
+                    alignItems={"center"}
+                    className="project-card"
+                >
                     <Box
                         w={{ lg: "100%" }}
                         padding={"30px 0"}
@@ -276,11 +308,14 @@ const Project = () => {
                                     spacing={3}
                                     textAlign={{ base: "center", lg: "left" }}
                                 >
-                                    <Heading fontSize={"2xl"}>
+                                    <Heading
+                                        fontSize={"2xl"}
+                                        className="project-title"
+                                    >
                                         JEE-Fit Clone
                                     </Heading>
                                     <Badge>Individual Project</Badge>
-                                    <Box>
+                                    <Box className="project-tech-stack">
                                         <HStack
                                             justifyContent={{
                                                 base: "center",
@@ -298,7 +333,10 @@ const Project = () => {
                                             </Badge>
                                         </HStack>
                                     </Box>
-                                    <Text textAlign={"justify"}>
+                                    <Text
+                                        textAlign={"justify"}
+                                        className="project-description"
+                                    >
                                         JEE-Fit is a Fitness tracking web
                                         application use to track any individuals
                                         fitness health. Customize your workout
@@ -314,6 +352,7 @@ const Project = () => {
                                         }}
                                     >
                                         <Link
+                                            className="project-github-link"
                                             href="https://github.com/justtJayesh/JEFIT-Clone"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
@@ -329,6 +368,7 @@ const Project = () => {
                                             </Button>
                                         </Link>
                                         <Link
+                                            className="project-deployed-link"
                                             href="https://equiinox.netlify.app/"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
