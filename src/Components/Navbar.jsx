@@ -90,7 +90,7 @@ export default function Navbar() {
                                         "gray.700"
                                     ),
                                 }}
-                                href={"#contact"}
+                                href={"#home"}
                                 onClick={click ? handleClick : null}
                             >
                                 Home
@@ -196,7 +196,6 @@ export default function Navbar() {
                                     onClick={handleResume}
                                     border="1px solid white"
                                 >
-                                    {" "}
                                     Resume
                                 </Button>
                             </Link>
@@ -214,19 +213,19 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <Link key={"home"} className="nav-link home">
+                            <Link key={"home"} className="nav-link home" href={'#home'}>
                                 Home
                             </Link>
-                            <Link key={"about"} className="nav-link about">
+                            <Link key={"about"} className="nav-link about" href={'#about'}>
                                 About Me
                             </Link>
-                            <Link key={"skills"} className="nav-link skills">
+                            <Link key={"skills"} className="nav-link skills" href={'#skills'}>
                                 Skills
                             </Link>
-                            <Link key={"project"} className="nav-link projects">
+                            <Link key={"project"} className="nav-link projects" href={'#projects'}>
                                 Projects
                             </Link>
-                            <Link key={"contact"} className="nav-link contact">
+                            <Link key={"contact"} className="nav-link contact" href={'#contact'}>
                                 Contact
                             </Link>
                             <Link key={"resume"} className="nav-link resume">
