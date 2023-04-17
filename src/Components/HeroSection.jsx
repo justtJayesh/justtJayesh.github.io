@@ -71,13 +71,13 @@ export const HeroSection = () => {
                                         href="https://www.linkedin.com/in/jayeshmate/"
                                         target="_blank"
                                     >
-                                        <IoLogoLinkedin />
+                                        <IoLogoLinkedin size={'24px'}/>
                                     </Link>
                                     <Link
                                         href="https://github.com/justtJayesh"
                                         target="_blank"
                                     >
-                                        <IoLogoGithub />
+                                        <IoLogoGithub size={'24px'}/>
                                     </Link>
                                 </HStack>
                             </Box>

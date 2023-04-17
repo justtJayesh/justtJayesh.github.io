@@ -13,26 +13,27 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import Jayesh_resume from "../Assets/Resume/Jayesh-Mate-Resume.pdf";
 // import favicon from "../Assets/dh.png";
 // import { NavLink } from "react-router-dom";
 import React from "react";
 // const Links = ["Home", "About Me", "Skills", "Projects", "Contact", "Resume"];
 
-const NavLink = ({ children }) => (
-    <Link
-        px={2}
-        py={1}
-        rounded={"md"}
-        fontSize={"large"}
-        _hover={{
-            textDecoration: "none",
-            bg: useColorModeValue("gray.100", "gray.700"),
-        }}
-        href={"#"}
-    >
-        <span>{children}</span>
-    </Link>
-);
+// const NavLink = ({ children }) => (
+//     <Link
+//         px={2}
+//         py={1}
+//         rounded={"md"}
+//         fontSize={"large"}
+//         _hover={{
+//             textDecoration: "none",
+//             bg: useColorModeValue("gray.100", "gray.700"),
+//         }}
+//         href={"#contact"}
+//     >
+//         <span>{children}</span>
+//     </Link>
+// );
 
 export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -40,6 +41,12 @@ export default function Navbar() {
 
     const [click, setClick] = React.useState(false);
     const handleClick = () => setClick(!click);
+
+    const handleResume = () => {
+        window.open(
+            "https://drive.google.com/file/d/1T788dHvoZIeotEcH_pP-8SnKER1HmARW/view?usp=share_link"
+        );
+    };
 
     return (
         <div id="nav-menu">
@@ -69,35 +76,130 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <NavLink
+                            <Link
                                 key={"home"}
                                 className="nav-link home"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={"#contact"}
                                 onClick={click ? handleClick : null}
                             >
                                 Home
-                            </NavLink>
-
-                            <NavLink key={"about"} className="nav-link about">
-                                About Me
-                            </NavLink>
-                            <NavLink key={"skills"} className="nav-link skills">
+                            </Link>
+                            <Link
+                                key={"about"}
+                                className="nav-link about"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={"#about"}
+                                onClick={click ? handleClick : null}
+                            >
+                                About
+                            </Link>
+                            <Link
+                                key={"skills"}
+                                className="nav-link skills"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={"#skills"}
+                                onClick={click ? handleClick : null}
+                            >
                                 Skills
-                            </NavLink>
-                            <NavLink
-                                key={"project"}
+                            </Link>
+                            <Link
+                                key={"projects"}
                                 className="nav-link projects"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={"#projects"}
+                                onClick={click ? handleClick : null}
                             >
                                 Projects
-                            </NavLink>
-                            <NavLink
-                                key={"contact"}
+                            </Link>
+                            <Link
+                                key={"Contact"}
                                 className="nav-link contact"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={"#contact"}
+                                onClick={click ? handleClick : null}
                             >
                                 Contact
-                            </NavLink>
-                            <NavLink key={"resume"} className="nav-link resume">
-                                Resume
-                            </NavLink>
+                            </Link>
+                            <Link
+                                key={"Resume"}
+                                className="nav-link resume"
+                                download={true}
+                                target="_blank"
+                                id="resume-link-1"
+                                px={2}
+                                py={1}
+                                rounded={"md"}
+                                fontSize={"large"}
+                                _hover={{
+                                    textDecoration: "none",
+                                    bg: useColorModeValue(
+                                        "gray.100",
+                                        "gray.700"
+                                    ),
+                                }}
+                                href={Jayesh_resume}
+                                onClick={click ? handleClick : null}
+                            >
+                                <Button
+                                    id="resume-button-1"
+                                    onClick={handleResume}
+                                    border="1px solid white"
+                                >
+                                    {" "}
+                                    Resume
+                                </Button>
+                            </Link>
                         </HStack>
                     </HStack>
                     <Button onClick={toggleColorMode}>
@@ -112,30 +214,24 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <NavLink key={"home"} className="nav-link home">
+                            <Link key={"home"} className="nav-link home">
                                 Home
-                            </NavLink>
-                            <NavLink key={"about"} className="nav-link about">
+                            </Link>
+                            <Link key={"about"} className="nav-link about">
                                 About Me
-                            </NavLink>
-                            <NavLink key={"skills"} className="nav-link skills">
+                            </Link>
+                            <Link key={"skills"} className="nav-link skills">
                                 Skills
-                            </NavLink>
-                            <NavLink
-                                key={"project"}
-                                className="nav-link projects"
-                            >
+                            </Link>
+                            <Link key={"project"} className="nav-link projects">
                                 Projects
-                            </NavLink>
-                            <NavLink
-                                key={"contact"}
-                                className="nav-link contact"
-                            >
+                            </Link>
+                            <Link key={"contact"} className="nav-link contact">
                                 Contact
-                            </NavLink>
-                            <NavLink key={"resume"} className="nav-link resume">
+                            </Link>
+                            <Link key={"resume"} className="nav-link resume">
                                 Resume
-                            </NavLink>
+                            </Link>
                         </Stack>
                     </Box>
                 ) : null}
