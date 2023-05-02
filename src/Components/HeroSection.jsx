@@ -71,41 +71,40 @@ export const HeroSection = () => {
                                         href="https://www.linkedin.com/in/jayeshmate/"
                                         target="_blank"
                                     >
-                                        <IoLogoLinkedin size={'24px'}/>
+                                        <IoLogoLinkedin size={"24px"} />
                                     </Link>
                                     <Link
                                         href="https://github.com/justtJayesh"
                                         target="_blank"
                                     >
-                                        <IoLogoGithub size={'24px'}/>
+                                        <IoLogoGithub size={"24px"} />
                                     </Link>
                                 </HStack>
                             </Box>
-                            <Box>
-                                <Link
-                                    href={Jayesh_resume}
-                                    download={true}
-                                    target="_blank"
-                                    id="resume-link-2"
+
+                            <Link
+                                href={Jayesh_resume}
+                                download={true}
+                                target="_blank"
+                                id="resume-link-2"
+                            >
+                                <Button
+                                    id="resume-button-2"
+                                    bg={useColorModeValue(
+                                        "#EE6262",
+                                        "gray.700"
+                                    )}
+                                    color="white"
+                                    w={{ lg: "50%", base: "100%" }}
+                                    borderRadius="3"
+                                    h="50px"
+                                    fontSize={"larger"}
+                                    _hover={{ bg: "#f07f7f" }}
+                                    onClick={handleResume}
                                 >
-                                    <Button
-                                        id="resume-button-2"
-                                        bg={useColorModeValue(
-                                            "#EE6262",
-                                            "gray.700"
-                                        )}
-                                        color="white"
-                                        w={{ lg: "50%", base: "100%" }}
-                                        borderRadius="3"
-                                        h="50px"
-                                        fontSize={"larger"}
-                                        _hover={{ bg: "#f07f7f" }}
-                                        onClick={handleResume}
-                                    >
-                                        Download Resume
-                                    </Button>
-                                </Link>
-                            </Box>
+                                    Download Resume
+                                </Button>
+                            </Link>
                         </Stack>
                     </Box>
                     <Box w={"60%"} padding="15px" margin={"auto"}>

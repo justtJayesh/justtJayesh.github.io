@@ -4,7 +4,7 @@ import GitHubCalendar from "react-github-calendar";
 
 const GithubStats = () => {
     return (
-        <div style={{margin:"60px auto"}}>
+        <div style={{ margin: "60px auto" }}>
             <Box w={{ lg: "72%", base: "90%" }} margin={"auto"}>
                 <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
                     <Heading>GitHub Stats</Heading>
@@ -18,9 +18,18 @@ const GithubStats = () => {
                     </Box>
                 </Center>
             </Box>
-            <Box w={{lg:'100%', base:"80%"}} m={'auto'}>
+            <Box w={{ lg: "100%", base: "80%" }} m={"auto"}>
                 <div>
-                    <Stack direction={{lg: 'row', md:"column", base:'column'}} spacing={4} justifyContent={'center'}>
+                    <Stack
+                        direction={{ lg: "row", md: "column", base: "column" }}
+                        spacing={4}
+                        justifyContent={{
+                            lg: "center",
+                            md: "center",
+                            base: "center",
+                        }}
+                        alignItems={"center"}
+                    >
                         <Image
                             id="github-streak-stats"
                             w={"420px"}
@@ -33,6 +42,7 @@ const GithubStats = () => {
                         />
                         <Image
                             id="github-top-langs"
+                            w={{ lg: "300px", md: "400px" }}
                             src="https://github-readme-stats.vercel.app/api/top-langs/?username=justtJayesh&layout=compact"
                         />
                     </Stack>

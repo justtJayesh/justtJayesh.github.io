@@ -49,8 +49,20 @@ export default function Navbar() {
     };
 
     return (
-        <div id="nav-menu">
-            <Box bg={useColorModeValue("whiteAlpha.100", "gray.900")} px={9}>
+        <div
+            id="nav-menu"
+            style={{
+                position: "sticky",
+                top: 0,
+                zIndex: "1",
+                backgroundColor: "white",
+            }}
+        >
+            <Box
+                // bg={useColorModeValue("whiteAlpha.100", "gray.900")}
+                px={9}
+                w={"full"}
+            >
                 <Flex
                     h={16}
                     alignItems={"center"}
@@ -213,19 +225,39 @@ export default function Navbar() {
                                 <NavLink key={link}>{link}</NavLink>
                             ))} */}
 
-                            <Link key={"home"} className="nav-link home" href={'#home'}>
+                            <Link
+                                key={"home"}
+                                className="nav-link home"
+                                href={"#home"}
+                            >
                                 Home
                             </Link>
-                            <Link key={"about"} className="nav-link about" href={'#about'}>
+                            <Link
+                                key={"about"}
+                                className="nav-link about"
+                                href={"#about"}
+                            >
                                 About Me
                             </Link>
-                            <Link key={"skills"} className="nav-link skills" href={'#skills'}>
+                            <Link
+                                key={"skills"}
+                                className="nav-link skills"
+                                href={"#skills"}
+                            >
                                 Skills
                             </Link>
-                            <Link key={"project"} className="nav-link projects" href={'#projects'}>
+                            <Link
+                                key={"project"}
+                                className="nav-link projects"
+                                href={"#projects"}
+                            >
                                 Projects
                             </Link>
-                            <Link key={"contact"} className="nav-link contact" href={'#contact'}>
+                            <Link
+                                key={"contact"}
+                                className="nav-link contact"
+                                href={"#contact"}
+                            >
                                 Contact
                             </Link>
                             <Link key={"resume"} className="nav-link resume">
@@ -235,8 +267,6 @@ export default function Navbar() {
                     </Box>
                 ) : null}
             </Box>
-
-            {/* <Box p={4}>Main Content Here</Box> */}
         </div>
     );
 }
