@@ -72,7 +72,7 @@ export default function Skills() {
                     </Flex>
                     <Stack spacing={4}>
                         <Box padding={"0 20px"} borderLeft={"3px solid gray"}>
-                            <Heading>Skills</Heading>
+                            <Heading>Teach Stacks and Tools</Heading>
                         </Box>
                         <Text color={"gray.500"} fontSize={"lg"}>
                             The more good ideas you collect, the more you can

@@ -35,18 +35,23 @@ const Contact = () => {
                     <Stack direction={"column"} spacing={8}>
                         <HStack spacing={"35px"} justifyContent={"center"}>
                             <Link
+                                target="_blank"
                                 id="contact-linkedin"
                                 href="https://www.linkedin.com/in/jayeshmate/"
                             >
                                 <IoLogoLinkedin size={"40px"} />
                             </Link>
                             <Link
+                                target="_blank"
                                 id="contact-github"
                                 href="https://github.com/justtJayesh"
                             >
                                 <IoLogoGithub size={"40px"} />
                             </Link>
-                            <Link href="https://twitter.com/justtJayesh">
+                            <Link
+                                target="_blank"
+                                href="https://twitter.com/justtJayesh"
+                            >
                                 <IoLogoTwitter size={"40px"} />
                             </Link>
                         </HStack>
@@ -66,7 +71,6 @@ const Contact = () => {
                             </HStack>
                         </Stack>
                     </Stack>
-                    
                 </VStack>
             </Box>
         </div>
