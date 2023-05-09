@@ -184,34 +184,29 @@ export default function Navbar() {
                             >
                                 Contact
                             </Link>
-                            <Link
-                                key={"Resume"}
-                                className="nav-link resume"
-                                download={true}
-                                target="_blank"
-                                id="resume-link-1"
-                                px={2}
-                                py={1}
-                                rounded={"md"}
-                                fontSize={"large"}
-                                _hover={{
-                                    textDecoration: "none",
-                                    bg: useColorModeValue(
-                                        "gray.100",
-                                        "gray.700"
-                                    ),
-                                }}
-                                href={Jayesh_resume}
-                                onClick={click ? handleClick : null}
+
+                            <Button
+                                id="resume-button-1"
+                                onClick={handleResume}
+                                border="1px solid white"
                             >
-                                <Button
-                                    id="resume-button-1"
-                                    onClick={handleResume}
-                                    border="1px solid white"
+                                <Link
+                                    key={"Resume"}
+                                    className="nav-link resume"
+                                    download={true}
+                                    target="_blank"
+                                    id="resume-link-1"
+                                    px={2}
+                                    py={1}
+                                    rounded={"md"}
+                                    fontSize={"large"}
+                                    _hover={{ textDecoration: "none" }}
+                                    href={Jayesh_resume}
+                                    onClick={click ? handleClick : null}
                                 >
                                     Resume
-                                </Button>
-                            </Link>
+                                </Link>
+                            </Button>
                         </HStack>
                     </HStack>
                     {/* <Button onClick={toggleColorMode}>
