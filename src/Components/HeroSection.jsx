@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import Jayesh_resume from "../Assets/Resume/Jayesh-Mate-Resume.pdf";
+import { textDecoration } from "@chakra-ui/react";
 
 export const HeroSection = () => {
     const handleResume = () => {
@@ -82,29 +83,27 @@ export const HeroSection = () => {
                                 </HStack>
                             </Box>
 
-                            <Link
-                                href={Jayesh_resume}
-                                download={true}
-                                target="_blank"
-                                id="resume-link-2"
+                            <Button
+                                id="resume-button-2"
+                                bg={useColorModeValue("#EE6260", "gray.700")}
+                                color="white"
+                                w={{ lg: "50%", base: "100%" }}
+                                borderRadius="3"
+                                h="50px"
+                                fontSize={"larger"}
+                                _hover={{ bg: "#D2302C" }}
+                                onClick={handleResume}
                             >
-                                <Button
-                                    id="resume-button-2"
-                                    bg={useColorModeValue(
-                                        "#EE6262",
-                                        "gray.700"
-                                    )}
-                                    color="white"
-                                    w={{ lg: "50%", base: "100%" }}
-                                    borderRadius="3"
-                                    h="50px"
-                                    fontSize={"larger"}
-                                    _hover={{ bg: "#f07f7f" }}
-                                    onClick={handleResume}
+                                <Link
+                                    href={Jayesh_resume}
+                                    download={true}
+                                    target="_blank"
+                                    id="resume-link-2"
+                                    _hover={{ textDecoration: "none" }}
                                 >
                                     Download Resume
-                                </Button>
-                            </Link>
+                                </Link>
+                            </Button>
                         </Stack>
                     </Box>
                     <Box w={"60%"} padding="15px" margin={"auto"}>
