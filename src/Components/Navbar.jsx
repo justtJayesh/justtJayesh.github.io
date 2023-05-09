@@ -54,7 +54,7 @@ export default function Navbar() {
             style={{
                 position: "sticky",
                 top: 0,
-                zIndex: "1",
+                zIndex: "overlay",
                 backgroundColor: "white",
                 // boxShadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px
             }}
@@ -63,6 +63,7 @@ export default function Navbar() {
                 // bg={useColorModeValue("whiteAlpha.100", "gray.900")}
                 px={9}
                 w={"full"}
+                // borderBottom={'1px solid lightgrey'}
             >
                 <Flex
                     h={16}
