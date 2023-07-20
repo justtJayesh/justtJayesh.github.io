@@ -231,7 +231,7 @@ const Project = () => {
                                     >
                                         <Link
                                             className="project-github-link"
-                                            href="https://github.com/justtJayesh/JEFIT-Clone"
+                                            href="https://github.com/justtJayesh/American-Eagle-Clone"
                                             _hover={{ textDecoration: "none" }}
                                             target="_blank"
                                         >
